@@ -3,14 +3,14 @@ jobs:
   mail_on_push:
     runs-on: ubuntu-latest
     steps:
-    - name: Github Email
+    - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.gmail.com
         server_port: 587
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: "Email pushed"
-        body: "Email pushed by Kerdo Vähk ..."
-        to: jüri.vaitmaa@tthk.ee
+        subject: "Pushed Email"
+        body: "Push made by ${{ github.event.pusher.name }} to the repository ${{ github.repository }} with the commit message: '${{ github.event.head_commit.message }}'"
+        to: kerdovahk@gmail.com
         from: "Github Actions"
