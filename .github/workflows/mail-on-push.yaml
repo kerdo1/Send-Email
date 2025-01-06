@@ -12,5 +12,5 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: "Pushed Email"
         body: "Push made by ${{ github.event.pusher.name }} to the repository ${{ github.repository }} with the commit message: '${{ github.event.head_commit.message }}'"
-        to: jüri.vaitmaa@tthk.ee
+        to: jyri.vaitmaa@tthk.ee
         from: "Github Actions"
