@@ -12,5 +12,5 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: "Email pushed"
         body: "Email pushed by Kerdo Vähk ..."
-        to: kerdovahk@gmail.com
+        to: jüri.vaitmaa@tthk.ee
         from: "Github Actions"
