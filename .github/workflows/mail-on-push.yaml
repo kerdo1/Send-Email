@@ -11,6 +11,6 @@ jobs:
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
         subject: "Email pushed"
-        body: "Email pushed by Kerdo Vähk ...."
+        body: "Email pushed by Kerdo Vähk ..."
         to: kerdovahk@gmail.com
         from: "Github Actions"
